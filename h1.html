@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genratour</title>
+<style>
+  body {
+    padding: 2%;
+    margin: 1%;
+    background-color: rgb(255, 255, 255);
+}
+ img {
+justify-content: center;
+align-items: center;
+width: 60%;
+height: 40%;
+margin-left:20% ;
+margin-right:20% ;
+
+  }
+.btn{
+display: flex;
+justify-content: center;
+align-items: center;
+
+  }
+</style>
+</head>
+<body>
+  <script>
+var arr =  ['img/p1.jpeg','img/p2.jpeg','img/p3.jpeg','img/p4.jpeg','img/p5.jpeg','img/p6.jpeg']
+//const pi = document.querySelector('section');
+    function Genratour()
+    {
+       var im2 = Math.floor(Math.random() * arr.length);
+       console .log(im2)
+       var a = arr[im2];
+       //pi.style.backgroundImage=a;
+       document.getElementById("block").src=a;
+       //document.getElementById("block").innerHTML += '<img src="'+ arr[im2] +'" style="width:350px;height:250px;" />';    
+    }
+</script>
+
+    <h2 style="text-align: center;">Image Genratour</h2>
+    <div class="btn" > 
+      <button onclick="Genratour()" "> Genratour </button>
+    </div>
+<br>
+<br>
+  <div><img id="block" style="align-items: center;" /></div> 
+</body>
+</html>
